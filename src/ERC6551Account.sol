@@ -1,14 +1,12 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/interfaces/IERC1271.sol";
-import "@openzeppelin/contracts/utils/cryptography/SignatureChecker.sol";
+import "openzeppelin-contracts/token/ERC721/IERC721.sol";
+import "openzeppelin-contracts/interfaces/IERC1271.sol";
+import "openzeppelin-contracts/utils/cryptography/SignatureChecker.sol";
 
-import "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol";
-import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
+import "openzeppelin-contracts/token/ERC1155/IERC1155Receiver.sol"; //This account can receive ERC1155 tokens
+import "openzeppelin-contracts/utils/introspection/IERC165.sol";
 import "./interfaces/IERC6551Account.sol";
 
 import "./lib/MinimalReceiver.sol";
